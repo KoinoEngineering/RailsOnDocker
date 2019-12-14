@@ -16,7 +16,7 @@
 - ソースを変更したとき  
     ```
     # 細かいところは好み
-    docker-compose down --rmi all && docker-compose up -build
+    docker-compose down --rmi all && docker-compose up -d --build
     ```
 
 - 止めるとき 
