@@ -3,6 +3,12 @@
 - https://docs.docker.com/compose/rails/
 
 ## 使い方
+- docker for windowsの時
+    ```
+    # docker は正しく動く状態であるとする
+    sudo cgroupfs-mount && sudo service docker start
+    ```
+
 - 初回起動時  
     ```
     docker-compose up -d && docker-compose run web rake db:create
@@ -21,7 +27,7 @@
 
 - 止めるとき 
     ```
-    docker-compose down -v
+    docker-compose down --remove-orphans
     ```
 
     - イメージごと消したいとき  
