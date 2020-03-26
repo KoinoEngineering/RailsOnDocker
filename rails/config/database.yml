@@ -3,13 +3,12 @@ default: &default
   encoding: unicode
   host: db
   username: postgres
-  password:
+  password: password
   pool: 5
 
 development:
   <<: *default
   database: myapp_development
-
 
 test:
   <<: *default
